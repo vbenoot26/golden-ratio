@@ -14,3 +14,8 @@ wezterm.on("update-status", function(window, pane)
 	gr.apply_golden_ratio(window, pane)
 end)
 ```
+
+It may happen that it is **very** laggy. It may be that you need to update your `status_update_interval`. e.g.:
+```lua
+config.status_update_interval = 200
+```
